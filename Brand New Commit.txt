@@ -3,3 +3,6 @@ Data $150
 Rent $800
 Candles $ 3,600
 Utility $ 150
+
+Somebody help me balance my budget.
+My family is dying.
