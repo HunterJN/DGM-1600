@@ -9,7 +9,7 @@ public class Adventure : MonoBehaviour
     public enum Location { weaponshop, inn, church, castle, magicshop, commons, fountain, generalgoods, townentrance, guild, arena, residentdistrict, farmer, farmeryes, farmerno,
         blacksmith, boughtss, boughtsms, boughtbs, boughtls, error1, error2, error3, error4, vendor, townsman, merchant, shp, lhp, wizard, apprentice, robes, guard, guildmaster, trader,
         sell, sellsms, sellss, sellboots, sellshp, selllhp, receptionist, receptionist2, knight, attendee, mercenary, woman, buisnessman, arenastart, arenadecline, arenaint, arenafight1,
-        win1, win2, win3, status1, status2, status3, statusupdate1, statusupdate2, useitem, arenafight2, arenafight3}
+        win1, win2, win3, win4, status1, status2, status3, status4, statusupdate1, statusupdate2, useitem, arenafight2, arenafight3, arenafight4, farmhand, lose}
     public Location myLocation;
     public int boots = 0;
     public int shortsword = 0;
@@ -26,6 +26,7 @@ public class Adventure : MonoBehaviour
     public int a = 0;
     public int b = 0;
     public int c = 0;
+    public int d = 0;
     public Text textObject;
     public Text titleObject;
     public Text text2Object;
@@ -283,6 +284,26 @@ public class Adventure : MonoBehaviour
         {
             Arenafight3();
         }
+        else if (myLocation == Location.arenafight4)
+        {
+            Arenafight4();
+        }
+        else if (myLocation == Location.status4)
+        {
+            Status4();
+        }
+        else if (myLocation == Location.farmhand)
+        {
+            Farmhand();
+        }
+        else if (myLocation == Location.lose)
+        {
+            Lose();
+        }
+        else if (myLocation == Location.win4)
+        {
+            Win4();
+        }
         else
         {
             print("Error");
@@ -300,7 +321,8 @@ public class Adventure : MonoBehaviour
             "Talk to the Guard? (T) \n" +
             "Move to the Fountain? (F) \n" +
             "Move to the Commons? (C) \n" +
-            "Move to the Inn? (I)";
+            "Move to the Inn? (I) \n" +
+            "Quit (Q)";
         if (Input.GetKeyDown(KeyCode.F))
         {
             myLocation = Location.fountain;
@@ -316,6 +338,10 @@ public class Adventure : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T))
         {
             myLocation = Location.guard;
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Application.Quit();
         }
     }
 
@@ -358,7 +384,7 @@ public class Adventure : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Y))
         {            
-            myLocation = Location.fountain;
+            myLocation = Location.townsman;
         }
         if (Input.GetKeyDown(KeyCode.W))
         {
@@ -508,8 +534,8 @@ public class Adventure : MonoBehaviour
     {
         textObject.text = "Ladies & Gentlemen! Welcome to the 22nd Anneversery of the King's Tournament! \n" +
             "Contestents, are you ready? \n" +
-            "Ready (Y)";
-        if (Input.GetKeyDown(KeyCode.Y))
+            "Ready (R)";
+        if (Input.GetKeyDown(KeyCode.R))
         {
             myLocation = Location.arenafight1;
         }
@@ -558,15 +584,16 @@ public class Adventure : MonoBehaviour
             "Talk to the Farmer? (T) \n" +
             "Talk to the Farmhand? (Y) \n" +
             "Move to the Town Entrance? (E) \n" +
-            "Move to the Residential District? (R) \n";
+            "Move to the Residential District? (R)";
         if (Input.GetKeyDown(KeyCode.T))
         {            
             myLocation = Location.farmer;
         }
         if (Input.GetKeyDown(KeyCode.Y))
         {
-            print("Got time to talk ya got time to work.");
-            textObject.text = "Got time to talk ya got time to work.";
+            //print("Got time to talk ya got time to work.");
+            //textObject.text = "Got time to talk ya got time to work.";
+            myLocation = Location.farmhand;
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
@@ -614,7 +641,7 @@ public class Adventure : MonoBehaviour
     private void Mercenary()
     {
         textObject.text = textObject.text = "Here to participate in the tournament today? \n" +
-            "You might want to visit the shops before heading to the arena." +
+            "You might want to visit the shops before heading to the arena. \n" +
             "Return (R)";
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -626,7 +653,7 @@ public class Adventure : MonoBehaviour
     {
         textObject.text = "Arrived at the Weapons Shop. \n" +
             "Talk to the Blacksmith? (T) \n" +
-            "Move to the Fountain? (F) \n";
+            "Move to the Fountain? (F)";
         if (Input.GetKeyDown(KeyCode.T))
         {
             myLocation = Location.blacksmith;
@@ -722,7 +749,7 @@ public class Adventure : MonoBehaviour
     {
         textObject.text = "Arrived at the General Goods Shop. \n" +
             "Talk to the Merchant? (T) \n" +
-            "Move to the Fountain? (F) \n";
+            "Move to the Fountain? (F)";
         if (Input.GetKeyDown(KeyCode.T))
         {
             myLocation = Location.merchant;
@@ -797,7 +824,7 @@ public class Adventure : MonoBehaviour
         textObject.text = "Arrived at the Magic Shop. \n" +
             "Talk to the Wizard? (T) \n" +
             "Talk to the Apprentice? (Y) \n" +
-            "Move to the Fountain? (F) \n";
+            "Move to the Fountain? (F)";
         if (Input.GetKeyDown(KeyCode.T))
         {
             myLocation = Location.wizard;
@@ -862,7 +889,7 @@ public class Adventure : MonoBehaviour
         textObject.text = "Arrived at the Guild. \n" +
             "Talk to the Guild Master? (T) \n" +
             "Talk to the Trader? (Y) \n" +
-            "Move to the Fountain? (F) \n";
+            "Move to the Fountain? (F)";
         if (Input.GetKeyDown(KeyCode.T))
         {
             myLocation = Location.guildmaster;
@@ -895,8 +922,8 @@ public class Adventure : MonoBehaviour
     private void Sell()
     {
         textObject.text = "What would you like to sell? \n" +
-            "Small Shield " + smallshield + " (Z)\n" + "Short Sword " + shortsword + " (X)\n" + "Work Boots " + boots + " (C)\n" + 
-            "Small Health Potion " + smallhealthpotion + " (V)\n" + "Large Health Potion " + largehealthpotion + " (B)\n" +
+            "Small Shield " + smallshield + " (Z)\n" + "Short Sword " + shortsword + " (X)\n" + "Work Boots " + boots + " (C) \n" + 
+            "Small Health Potion " + smallhealthpotion + " (V)\n" + "Large Health Potion " + largehealthpotion + " (B) \n" +
             "Return (R)";
         if (Input.GetKeyDown(KeyCode.Z))
         {
@@ -928,7 +955,7 @@ public class Adventure : MonoBehaviour
     {
         if (smallshield >= 1)
         {
-            textObject.text = "Gained 50g." +
+            textObject.text = "Gained 50g. \n" +
                 "Return (R)";
             if (Input.GetKeyDown(KeyCode.R))
             {
@@ -947,7 +974,7 @@ public class Adventure : MonoBehaviour
     {
         if (shortsword >= 1)
         {
-            textObject.text = "Gained 50g." +
+            textObject.text = "Gained 50g. \n" +
                 "Return (R)";
             if (Input.GetKeyDown(KeyCode.R))
             {
@@ -966,7 +993,7 @@ public class Adventure : MonoBehaviour
     {
         if (boots >= 1)
         {
-            textObject.text = "Gained 10g." +
+            textObject.text = "Gained 10g. \n" +
                 "Return (R)";
             if (Input.GetKeyDown(KeyCode.R))
             {
@@ -984,7 +1011,7 @@ public class Adventure : MonoBehaviour
     {
         if (smallhealthpotion >= 1)
         {
-            textObject.text = "Gained 5g." +
+            textObject.text = "Gained 5g. \n" +
                 "Return (R)";
             if (Input.GetKeyDown(KeyCode.R))
             {
@@ -1002,7 +1029,7 @@ public class Adventure : MonoBehaviour
     {
         if (largehealthpotion >= 1)
         {
-            textObject.text = "Gained 20g." +
+            textObject.text = "Gained 20g. \n" +
                 "Return (R)";
             if (Input.GetKeyDown(KeyCode.R))
             {
@@ -1038,6 +1065,16 @@ public class Adventure : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.N))
         {
             myLocation = Location.farmerno;
+        }
+    }
+
+    private void Farmhand()
+    {
+        textObject.text = "Got time to talk ya got time to work. \n" +
+            "Return (R)";
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            myLocation = Location.commons;
         }
     }
 
@@ -1077,6 +1114,10 @@ public class Adventure : MonoBehaviour
         if (ht <= 0)
         {
             myLocation = Location.win1;
+        }
+        else if (hp <= 0)
+        {
+            myLocation = Location.lose;
         }
         if (Input.GetKeyDown(KeyCode.A))
         {
@@ -1144,6 +1185,10 @@ public class Adventure : MonoBehaviour
         {
             myLocation = Location.win2;
         }
+        else if (hp <= 0)
+        {
+            myLocation = Location.lose;
+        }
         if (Input.GetKeyDown(KeyCode.A))
         {
             if (shortsword >= 1)
@@ -1198,13 +1243,17 @@ public class Adventure : MonoBehaviour
             "Use Item (I)";
         if (hm <= 0)
         {
-            myLocation = Location.win1;
+            myLocation = Location.win3;
+        }
+        else if (hp <= 0)
+        {
+            myLocation = Location.lose;
         }
         if (Input.GetKeyDown(KeyCode.A))
         {
             if (shortsword >= 1)
             {
-                hm = hm - 2;
+                hm = hm - 3;
                 if (boots >= 1 && smallshield >= 1)
                 {
                     hp = hp - 1;
@@ -1221,7 +1270,7 @@ public class Adventure : MonoBehaviour
             }
             else
             {
-                ht = ht - 1;
+                hm = hm - 1;
                 if (boots >= 1 && smallshield >= 1)
                 {
                     hp = hp - 1;
@@ -1259,33 +1308,136 @@ public class Adventure : MonoBehaviour
         }
     }
 
+    private void Arenafight4()
+    {
+        d = d + 1;
+        textObject.text = "Final oppenent is 'Knight' \n" +
+            "Attack (A) \n" +
+            "Defend (D) \n" +
+            "Use Item (I)";
+        if (hk <= 0)
+        {
+            myLocation = Location.win4;
+        }
+        else if (hp <= 0)
+        {
+            myLocation = Location.lose;
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            if (shortsword >= 1)
+            {
+                hk = hk - 2;
+                if (boots >= 1 && smallshield >= 1)
+                {
+                    hp = hp - 2;
+                }
+                else if ((boots >= 1 && smallshield == 0) || (boots == 0 && smallshield >= 0))
+                {
+                    hp = hp - 3;
+                }
+                else
+                {
+                    hp = hp - 4;
+                }
+                myLocation = Location.status4;
+            }
+            else
+            {
+                hk = hk - 0;
+                if (boots >= 1 && smallshield >= 1)
+                {
+                    hp = hp - 2;
+                }
+                else if ((boots >= 1 && smallshield == 0) || (boots == 0 && smallshield >= 0))
+                {
+                    hp = hp - 3;
+                }
+                else
+                {
+                    hp = hp - 4;
+                }
+                myLocation = Location.status4;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            if (boots >= 0 && smallshield >= 0)
+            {
+                hp = hp - 1;
+            }
+            else if ((boots >= 1 && smallshield == 0) || (boots == 0 && smallshield >= 0))
+            {
+                hp = hp - 2;
+            }
+            else
+            {
+                hp = hp - 3;
+            }
+            myLocation = Location.status4;
+        }
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            myLocation = Location.useitem;
+        }
+    }
+
     private void Win1()
     {
-        textObject.text = "Congratulations! Ready for the second round? \n" +
+        hp = 10;        
+        textObject.text = "Congratulations! Received small health potion. \n" +
+            "Ready for the second round? \n" +
             "Ready (R)";
         if(Input.GetKeyDown(KeyCode.R))
         {
+            smallhealthpotion = smallhealthpotion + 1;
             myLocation = Location.arenafight2;
         }
     }
 
     private void Win2()
-    {
-        textObject.text = "Congratulations! Ready for the third round? \n" +
+    {        
+        hp = 10;
+        textObject.text = "Congratulations! Received 2 small health potions. \n" + 
+            "Ready for the third round? \n" +
             "Ready (R)";
         if (Input.GetKeyDown(KeyCode.R))
         {
+            smallhealthpotion = smallhealthpotion + 2;
             myLocation = Location.arenafight3;
         }
     }
 
     private void Win3()
     {
-        textObject.text = "Congratulations! Ready for the final round? \n" +
+        hp = 10;        
+        textObject.text = "Congratulations! Received large health potion. \n" +
+            "Ready for the final round? \n" +
             "Ready (R)";
         if (Input.GetKeyDown(KeyCode.R))
         {
-            //myLocation = Location.arenafight3;
+            largehealthpotion = largehealthpotion + 1;
+            myLocation = Location.arenafight4;
+        }
+    }
+
+    private void Win4()
+    {
+        textObject.text = "Congratulations! You beat the game! \n" +
+            "Quit (Q)";
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Application.Quit();
+        }
+    }
+
+    private void Lose()
+    {
+        textObject.text = "You died. \n" +
+            "Quit (Q)";
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Application.Quit();
         }
     }
 
@@ -1329,11 +1481,27 @@ public class Adventure : MonoBehaviour
         }
         textObject.text = "Mercenary Attacks \n" +
             "Hp = " + hp + " \n" +
-            "Opponent Hp = " + hw + " \n" +
+            "Opponent Hp = " + hm + " \n" +
             "Return (R)";
         if (Input.GetKeyDown(KeyCode.R))
         {
             myLocation = Location.arenafight3;
+        }
+    }
+
+    private void Status4()
+    {
+        if (hp >= 10)
+        {
+            hp = 10;
+        }
+        textObject.text = "Knight Attacks \n" +
+            "Hp = " + hp + " \n" +
+            "Opponent Hp = " + hk + " \n" +
+            "Return (R)";
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            myLocation = Location.arenafight4;
         }
     }
 
@@ -1355,17 +1523,21 @@ public class Adventure : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
-            if (a >= 1 && b == 0 && c == 0)
+            if (a >= 1 && b == 0 && c == 0 && d == 0)
             {
                 myLocation = Location.status1;
             }
-            else if (b >= 1 && c == 0)
+            else if (b >= 1 && c == 0 && d == 0)
             {
                 myLocation = Location.status2;
             }
-            else if (c >= 1)
+            else if (c >= 1 && d == 0)
             {
                 myLocation = Location.status3;
+            }
+            else if (d >= 1)
+            {
+                myLocation = Location.status4;
             }
         }
     }
@@ -1378,7 +1550,7 @@ public class Adventure : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             hp = hp + 3;
-            if (a >= 1 && b == 0)
+            if (a >= 1 && b == 0 && c == 0 && d == 0)
             {
                 if (boots >= 1 && smallshield >= 1)
                 {
@@ -1394,7 +1566,7 @@ public class Adventure : MonoBehaviour
                 }
                 myLocation = Location.status1;
             }
-            else if (b >= 1)
+            else if (b >= 1 && c == 0 && d == 0)
             {
                 if (robes >= 1)
                 {
@@ -1406,7 +1578,7 @@ public class Adventure : MonoBehaviour
                 }
                 myLocation = Location.status2;
             }
-            else if (c >= 1)
+            else if (c >= 1 && d == 0)
             {
                 if(boots >= 1 && smallshield >= 1)
                 {
@@ -1422,6 +1594,22 @@ public class Adventure : MonoBehaviour
                 }
                 myLocation = Location.status3;
             }
+            else if (d >= 1)
+            {
+                if (boots >= 1 && smallshield >= 1)
+                {
+                    hp = hp - 2;
+                }
+                else if ((boots >= 1 && smallshield == 0) || (boots == 0 && smallshield >= 0))
+                {
+                    hp = hp - 3;
+                }
+                else
+                {
+                    hp = hp - 4;
+                }
+                myLocation = Location.status4;
+            }
         }
     }
 
@@ -1433,7 +1621,7 @@ public class Adventure : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             hp = hp + 10;
-            if (a >= 1 && b == 0)
+            if (a >= 1 && b == 0 && c == 0 && d == 0)
             {
                 if (boots >= 1 && smallshield >= 1)
                 {
@@ -1449,7 +1637,7 @@ public class Adventure : MonoBehaviour
                 }
                 myLocation = Location.status1;
             }
-            else if (b >= 1)
+            else if (b >= 1 && c == 0 && d == 0)
             {
                 if (robes >= 1)
                 {
@@ -1461,7 +1649,7 @@ public class Adventure : MonoBehaviour
                 }
                 myLocation = Location.status1;
             }
-            else if (c >= 1)
+            else if (c >= 1 && d == 0)
             {
                 if (boots >= 1 && smallshield >= 1)
                 {
@@ -1476,6 +1664,22 @@ public class Adventure : MonoBehaviour
                     hp = hp - 3;
                 }
                 myLocation = Location.status3;
+            }
+            else if (d >= 1)
+            {
+                if (boots >= 1 && smallshield >= 1)
+                {
+                    hp = hp - 2;
+                }
+                else if ((boots >= 1 && smallshield == 0) || (boots == 0 && smallshield >= 0))
+                {
+                    hp = hp - 3;
+                }
+                else
+                {
+                    hp = hp - 4;
+                }
+                myLocation = Location.status4;
             }
         }
     }
