@@ -4,22 +4,18 @@ using UnityEngine;
 
 public class MovePaddle : MonoBehaviour {
 
-    public float moveSpeed = 5;
-    private Rigidbody2D rigi;
+    public float verticalOffset;
 
-    private void Awake()
-    {
-        rigi = GetComponent<Rigidbody2D>();
-    }
-
-    private void FixedUpdate()
-    {
-        rigi.velocity = new Vector3(moveSpeed, 0, 0);        
-    }
-
-    private void OnCollsionEnter2D(Collision2D coll)
-    {
-        if (tag == "Right" || tag == "Left")
-            rigi.velocity *= -1;
+    void Update  () {
+        //get current paddle position
+        Vector3 paddlePosition = new Vector3(0, gameObject.transform.position.y, 0);
+        //get mouse position
+        //convert mouse position to world space
+        float mousePositionX = Input.mousePosition.x / Screen.width * 24 - 12;
+        //float mousePositionX = Input.mousePosition.x / Screen.width - 12 * 24;
+        //save position
+        paddlePosition.x = mousePositionX;
+        //set this paddle object to saved position
+        gameObject.transform.position = paddlePosition;
     }
 }
