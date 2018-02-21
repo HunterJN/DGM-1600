@@ -8,6 +8,12 @@ public class Health : MonoBehaviour {
     public Sprite newSprite;
     public Sprite newSprite2;
 
+    private void Awake()
+    {
+        GameManager.brickCount++;
+        print(GameManager.brickCount);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         health--;
@@ -25,6 +31,12 @@ public class Health : MonoBehaviour {
         else if (health <= 0)
         {
             Destroy(gameObject);
+            GameManager.brickCount--;
+            if(GameManager.brickCount == 0)
+            {
+                FindObjectOfType<GameManager>().LoadNextLevel();
+            }
+            print(GameManager.brickCount);
         }
     }
 }
