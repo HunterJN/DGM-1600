@@ -394,7 +394,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 9848feff7a06ffff1ce6ffff3ee6ffff1afcffff00000000
+    m_ExpandedIDs: 6861feff3c7ffeff2c09ffffc227ffffa846ffff3a4dffffc857ffff285affffd67dffffc685ffff5494ffff4a9bfffff6ebffff2cf6ffffe2f6ffff1afcffff000000000c2e0000722e0000c02e0000dc2e0000562f00004a33000082480000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -499,7 +499,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 2c260000
     m_LastClickedID: 9772
-    m_ExpandedIDs: 00000000182600001c260000202600003a2600003c2600004c2600005e260000
+    m_ExpandedIDs: 000000001a2600001e260000222600003e260000402600005026000062260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -527,18 +527,18 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000182600001c260000202600003a2600003c2600004c2600005e260000
+    m_ExpandedIDs: 000000001a2600001e260000222600003e260000402600005026000062260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: GameManager
-      m_OriginalName: GameManager
+      m_Name: Continue
+      m_OriginalName: Continue
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 1588
+      m_UserData: 13182
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -609,14 +609,14 @@ MonoBehaviour:
     width: 1056
     height: 465
   m_SceneLighting: 1
-  lastFramingTime: 4823.51679646892
+  lastFramingTime: 764.9540264536308
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.43966866, y: -0.2652312, z: 0}
+    m_Target: {x: -1.7487067, y: -0.9340445, z: 0}
     speed: 2
-    m_Value: {x: 0.43966866, y: -0.2652312, z: 0}
+    m_Value: {x: -1.7487067, y: -0.9340445, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -643,9 +643,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 11.2109585
+    m_Target: 11.584639
     speed: 2
-    m_Value: 11.2109585
+    m_Value: 11.584639
   m_Ortho:
     m_Target: 1
     speed: 2

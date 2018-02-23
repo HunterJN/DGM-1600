@@ -751,8 +751,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 114392119131299700, guid: d482224ed7e0c6a44839f3169133eb56,
           type: 2}
-        m_MethodName: LoadLevel
-        m_Mode: 5
+        m_MethodName: LoadCurrentLevel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
