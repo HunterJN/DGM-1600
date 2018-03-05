@@ -1,49 +1,49 @@
 fileFormatVersion: 2
 guid: 3d6d80c6aeb2f3540beec515fe58dff2
-timeCreated: 1520006098
+timeCreated: 1520267926
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
-    21300000: fw_d1
-    21300002: fw_u1
-    21300004: fw_d2
-    21300006: fw_d3
-    21300008: fw_d4
-    21300010: fw_u2
-    21300012: fw_d5
-    21300014: fw_d6
-    21300016: bw_d1
-    21300018: bw_u1
-    21300020: bw_d2
-    21300022: bw_d3
-    21300024: bw_d4
-    21300026: bw_u2
-    21300028: bw_d5
-    21300030: bw_d6
-    21300032: s_d1
-    21300034: s_u1
-    21300036: s_d2
-    21300038: s_d3
-    21300040: s_d4
-    21300042: s_u2
-    21300044: s_d5
-    21300046: s_d6
-    21300048: da_d1
-    21300050: da_u1
-    21300052: da_d2
-    21300054: da_d3
-    21300056: da_d4
-    21300058: da_u2
-    21300060: da_d5
-    21300062: da_d6
-    21300064: ua_d1
-    21300066: ua_u1
-    21300068: ua_d2
-    21300070: ua_d3
-    21300072: ua_d4
-    21300074: ua_u2
-    21300076: ua_d5
-    21300078: ua_d6
+    21300000: f1
+    21300002: f2
+    21300004: f3
+    21300006: f4
+    21300008: f5
+    21300010: f6
+    21300012: f7
+    21300014: f8
+    21300016: b1
+    21300018: b2
+    21300020: b3
+    21300022: b4
+    21300024: b5
+    21300026: b6
+    21300028: b7
+    21300030: b8
+    21300032: s1
+    21300034: s2
+    21300036: s3
+    21300038: s4
+    21300040: s5
+    21300042: s6
+    21300044: s7
+    21300046: s8
+    21300048: da1
+    21300050: da2
+    21300052: da3
+    21300054: da4
+    21300056: da5
+    21300058: da6
+    21300060: da7
+    21300062: da8
+    21300064: ua1
+    21300066: ua2
+    21300068: ua3
+    21300070: ua4
+    21300072: ua5
+    21300074: ua6
+    21300076: ua7
+    21300078: ua8
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -147,7 +147,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fw_d1
+      name: f1
       rect:
         serializedVersion: 2
         x: 4
@@ -161,7 +161,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: fw_u1
+      name: f2
       rect:
         serializedVersion: 2
         x: 19
@@ -175,7 +175,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: fw_d2
+      name: f3
       rect:
         serializedVersion: 2
         x: 34
@@ -189,7 +189,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: fw_d3
+      name: f4
       rect:
         serializedVersion: 2
         x: 49
@@ -203,7 +203,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: fw_d4
+      name: f5
       rect:
         serializedVersion: 2
         x: 64
@@ -217,7 +217,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: fw_u2
+      name: f6
       rect:
         serializedVersion: 2
         x: 79
@@ -231,7 +231,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: fw_d5
+      name: f7
       rect:
         serializedVersion: 2
         x: 94
@@ -245,7 +245,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: fw_d6
+      name: f8
       rect:
         serializedVersion: 2
         x: 109
@@ -259,7 +259,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: bw_d1
+      name: b1
       rect:
         serializedVersion: 2
         x: 4
@@ -273,7 +273,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: bw_u1
+      name: b2
       rect:
         serializedVersion: 2
         x: 19
@@ -287,7 +287,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: bw_d2
+      name: b3
       rect:
         serializedVersion: 2
         x: 34
@@ -301,7 +301,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: bw_d3
+      name: b4
       rect:
         serializedVersion: 2
         x: 49
@@ -315,7 +315,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: bw_d4
+      name: b5
       rect:
         serializedVersion: 2
         x: 64
@@ -329,7 +329,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: bw_u2
+      name: b6
       rect:
         serializedVersion: 2
         x: 79
@@ -343,7 +343,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: bw_d5
+      name: b7
       rect:
         serializedVersion: 2
         x: 94
@@ -357,7 +357,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: bw_d6
+      name: b8
       rect:
         serializedVersion: 2
         x: 109
@@ -371,7 +371,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: s_d1
+      name: s1
       rect:
         serializedVersion: 2
         x: 5
@@ -385,7 +385,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: s_u1
+      name: s2
       rect:
         serializedVersion: 2
         x: 20
@@ -399,7 +399,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: s_d2
+      name: s3
       rect:
         serializedVersion: 2
         x: 35
@@ -413,7 +413,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: s_d3
+      name: s4
       rect:
         serializedVersion: 2
         x: 50
@@ -427,7 +427,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: s_d4
+      name: s5
       rect:
         serializedVersion: 2
         x: 65
@@ -441,7 +441,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: s_u2
+      name: s6
       rect:
         serializedVersion: 2
         x: 80
@@ -455,7 +455,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: s_d5
+      name: s7
       rect:
         serializedVersion: 2
         x: 95
@@ -469,7 +469,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: s_d6
+      name: s8
       rect:
         serializedVersion: 2
         x: 110
@@ -483,7 +483,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: da_d1
+      name: da1
       rect:
         serializedVersion: 2
         x: 5
@@ -497,7 +497,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: da_u1
+      name: da2
       rect:
         serializedVersion: 2
         x: 20
@@ -511,7 +511,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: da_d2
+      name: da3
       rect:
         serializedVersion: 2
         x: 35
@@ -525,7 +525,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: da_d3
+      name: da4
       rect:
         serializedVersion: 2
         x: 50
@@ -539,7 +539,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: da_d4
+      name: da5
       rect:
         serializedVersion: 2
         x: 65
@@ -553,7 +553,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: da_u2
+      name: da6
       rect:
         serializedVersion: 2
         x: 80
@@ -567,7 +567,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: da_d5
+      name: da7
       rect:
         serializedVersion: 2
         x: 95
@@ -581,7 +581,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: da_d6
+      name: da8
       rect:
         serializedVersion: 2
         x: 110
@@ -595,7 +595,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ua_d1
+      name: ua1
       rect:
         serializedVersion: 2
         x: 5
@@ -609,7 +609,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ua_u1
+      name: ua2
       rect:
         serializedVersion: 2
         x: 20
@@ -623,7 +623,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ua_d2
+      name: ua3
       rect:
         serializedVersion: 2
         x: 35
@@ -637,7 +637,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ua_d3
+      name: ua4
       rect:
         serializedVersion: 2
         x: 50
@@ -651,7 +651,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ua_d4
+      name: ua5
       rect:
         serializedVersion: 2
         x: 65
@@ -665,7 +665,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ua_u2
+      name: ua6
       rect:
         serializedVersion: 2
         x: 80
@@ -679,7 +679,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ua_d5
+      name: ua7
       rect:
         serializedVersion: 2
         x: 95
@@ -693,7 +693,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ua_d6
+      name: ua8
       rect:
         serializedVersion: 2
         x: 110
