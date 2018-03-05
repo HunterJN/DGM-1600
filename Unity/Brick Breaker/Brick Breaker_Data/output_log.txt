@@ -1,0 +1,71 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA Quadro K2000 (ID=0xffe)
+    Vendor:   NVIDIA
+    VRAM:     1989 MB
+    Driver:   10.18.13.5467
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\DGM-1600\Unity\Brick Breaker\Brick Breaker_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\DGM-1600\Unity\Brick Breaker\Brick Breaker_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\DGM-1600\Unity\Brick Breaker\Brick Breaker_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\DGM-1600\Unity\Brick Breaker\Brick Breaker_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\DGM-1600\Unity\Brick Breaker\Brick Breaker_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\DGM-1600\Unity\Brick Breaker\Brick Breaker_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\DGM-1600\Unity\Brick Breaker\Brick Breaker_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\DGM-1600\Unity\Brick Breaker\Brick Breaker_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\DGM-1600\Unity\Brick Breaker\Brick Breaker_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading D:\DGM-1600\Unity\Brick Breaker\Brick Breaker_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: D:\DGM-1600\Unity\Brick Breaker\Brick Breaker_Data\Managed\System.dll (this message is harmless)
+Platform assembly: D:\DGM-1600\Unity\Brick Breaker\Brick Breaker_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.157 seconds
+WARNING: Shader Unsupported: 'Hidden/Internal-DepthNormalsTexture' - Pass '' has no vertex shader
+WARNING: Shader Unsupported: 'Hidden/Internal-DepthNormalsTexture' - Pass '' has no vertex shader
+WARNING: Shader Unsupported: 'Legacy Shaders/Diffuse' - Pass 'FORWARD' has no vertex shader
+WARNING: Shader Unsupported: 'Legacy Shaders/Diffuse' - Pass 'FORWARD' has no vertex shader
+WARNING: Shader Unsupported: 'Legacy Shaders/Diffuse' - Pass 'PREPASS' has no vertex shader
+WARNING: Shader Unsupported: 'Legacy Shaders/Diffuse' - Pass 'PREPASS' has no vertex shader
+WARNING: Shader Unsupported: 'Legacy Shaders/Diffuse' - Pass 'DEFERRED' has no vertex shader
+WARNING: Shader Unsupported: 'Legacy Shaders/Diffuse' - Pass 'META' has no vertex shader
+WARNING: Shader Unsupported: 'Legacy Shaders/Diffuse' - All passes removed
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.235353 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.367472 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 320.
+Total: 0.257638 ms (FindLiveObjects: 0.023347 ms CreateObjectMapping: 0.022937 ms MarkObjects: 0.186367 ms  DeleteObjects: 0.024575 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.382566 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 320.
+Total: 0.298598 ms (FindLiveObjects: 0.017203 ms CreateObjectMapping: 0.018841 ms MarkObjects: 0.204799 ms  DeleteObjects: 0.056934 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.440729 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 320.
+Total: 0.222822 ms (FindLiveObjects: 0.019660 ms CreateObjectMapping: 0.022937 ms MarkObjects: 0.158515 ms  DeleteObjects: 0.020889 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.396492 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 380.
+Total: 0.235110 ms (FindLiveObjects: 0.032358 ms CreateObjectMapping: 0.022118 ms MarkObjects: 0.167116 ms  DeleteObjects: 0.012697 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.437043 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 320.
+Total: 0.501759 ms (FindLiveObjects: 0.023347 ms CreateObjectMapping: 0.023347 ms MarkObjects: 0.239615 ms  DeleteObjects: 0.214630 ms)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 2b4c -> priority: 1 
+  Thread -> id: 2dc8 -> priority: 1 
+  Thread -> id: 3174 -> priority: 1 
+  Thread -> id: 2d04 -> priority: 1 

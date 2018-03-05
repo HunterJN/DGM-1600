@@ -375,12 +375,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 778344037}
---- !u!114 &805920873 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114392119131299700, guid: d482224ed7e0c6a44839f3169133eb56,
-    type: 2}
-  m_PrefabInternal: {fileID: 1589458934}
-  m_Script: {fileID: 11500000, guid: 05400bc21432a9c40a37a26f6db53c59, type: 3}
 --- !u!1 &890185989
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,7 +621,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 805920873}
+      - m_Target: {fileID: 114392119131299700, guid: d482224ed7e0c6a44839f3169133eb56,
+          type: 2}
         m_MethodName: QuitApplication
         m_Mode: 1
         m_Arguments:
@@ -751,8 +746,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 114392119131299700, guid: d482224ed7e0c6a44839f3169133eb56,
           type: 2}
-        m_MethodName: LoadCurrentLevel
-        m_Mode: 1
+        m_MethodName: LoadLevel
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

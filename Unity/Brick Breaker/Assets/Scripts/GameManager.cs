@@ -7,9 +7,6 @@ public class GameManager : MonoBehaviour {
 
     public static GameManager instance = null;
     public static int brickCount;
-    public int a = 0;
-    public int b = 0;
-    public int c = 0;
 
     // Use this for initialization
     void Awake()
@@ -44,39 +41,18 @@ public class GameManager : MonoBehaviour {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void LoadCurrentLevel()
+    /*public void LoadCurrentLevel()
     {
-        /*a++;
-        c = a + b;*/
-        a = 0;
-        a++;
-        if (a == 2)
+        if (brickCount > 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-            a = a + 1;
-            print("a:" + a);
-            print("b:" + b);
-            print("c: " + c);
+            print(SceneManager.GetActiveScene());
         }
-        else if (a == 1)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
-            a = a + 2;
-            print("a: " + a);
-            print("b: " + b);
-            print("c: " + c);
-        }
-        else
-        {
-            SceneManager.LoadScene(0);
-            print("a: " + a);
-            print("b: " + b);
-            print("c: " + c);
-        }
-    }
+    }*/
 
     public void QuitApplication()
     {
+        Debug.Log("Quit Game");
         Application.Quit();
     }
 }

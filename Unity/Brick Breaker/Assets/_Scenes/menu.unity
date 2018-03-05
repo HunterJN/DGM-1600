@@ -670,7 +670,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114392119131299700, guid: d482224ed7e0c6a44839f3169133eb56,
+          type: 2}
         m_MethodName: QuitApplication
         m_Mode: 1
         m_Arguments:

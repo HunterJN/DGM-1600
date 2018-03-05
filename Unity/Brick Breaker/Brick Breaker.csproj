@@ -97,6 +97,7 @@
     <Compile Include="Assets\Scripts\MusicManager.cs" />
     <Compile Include="Assets\Scripts\SizeFinder.cs" />
     <Compile Include="Assets\Scripts\SpawnIn.cs" />
+    <Compile Include="Assets\Scripts\variable.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
