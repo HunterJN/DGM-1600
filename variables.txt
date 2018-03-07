@@ -1,0 +1,55 @@
+Like constants, variables are considered a data type that stores information that the program uses. 
+Unlike constants however, variables are used when there is a need to change or update a value. 
+Some examples include:
+
+int a = 1;
+if (a >= 1)
+{
+Run code
+}
+
+Here the program checks for the variable ‘a’ and asks if it is greater than or equal to one. 
+If the statement is true, then it runs the code beneath.
+
+int a = 1;
+int b = 0;
+if (a >= 1 && b <= 0)
+{
+b++;
+}
+else if
+{
+print(b)
+}
+
+Here we declare two variables, a and b and assign them a value. 
+Since the statement is true the program will add one to b and pass it back to the variable. 
+When the program runs again the statement will now be false and will print out the value of b (one).
+
+int a;
+int b;
+int c;
+
+a = 2;
+b = 3;
+c = a + b;
+
+Here we initialize three variables, a, b, and c, which are set to zero by default. 
+We then assign numbers to both a and b and then we add them together to get c’s new value.
+
+string message = “Hello”
+print (message);
+
+Another type of variable is a string which letters or text. 
+Here we create a string called message and assign it the text Hello. 
+We then call the string by its name (message) within print.
+
+
+double area (double h, double w)
+{
+return h * w;
+}
+
+Here we create a double, which is used to hold decimals. 
+We name the double area and within area we utilize two more doubles for height and width (h & w). 
+We take those two values, multiply them together, then return the value as the area.
