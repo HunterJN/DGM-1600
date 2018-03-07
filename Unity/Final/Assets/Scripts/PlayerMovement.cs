@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(CapsuleCollider2D))]
+[RequireComponent(typeof(PolygonCollider2D))]
 public class PlayerMovement : MonoBehaviour {
 
     private Rigidbody2D rigid;
