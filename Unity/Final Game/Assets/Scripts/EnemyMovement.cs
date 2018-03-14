@@ -26,9 +26,9 @@ public class EnemyMovement : MonoBehaviour {
             float step = speed * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, Player.position, step);
         }
-        else
+        /*else if (Player == false)
         {
             SceneManager.LoadScene("Game Over");
-        }
+        }*/
     }
 }
