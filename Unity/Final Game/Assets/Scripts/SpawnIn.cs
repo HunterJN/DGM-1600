@@ -7,22 +7,22 @@ public class SpawnIn : MonoBehaviour {
     public GameObject[] obj;
     public float spawnMin = 1f;
     public float spawnMax = 2f;
-    public bool spawnOne = false;
+    //public bool spawnOne = false;
+    //int i;
 
 	// Use this for initialization
 	void Start () {
         Spawn();
 	}
 	
-	// Update is called once per frame
 	void Spawn()
     {
         //Instantiate(obj[Random.Range(0, obj.GetLength(0))], transform.position, Quaternion.identity);
         //Invoke("Spawn", Random.Range(spawnMin, spawnMax));
-        if (spawnOne == false)
+        for (int i = 0; i < 1; i++)
         {
             Instantiate(obj[0], transform.position, Quaternion.identity);
-            Invoke("Spawn", Random.Range(spawnMin, spawnMax));
+            //Invoke("Spawn", Random.Range(spawnMin, spawnMax));
         }
     }
 }
