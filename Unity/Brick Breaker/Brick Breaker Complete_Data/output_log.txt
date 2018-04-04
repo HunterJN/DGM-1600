@@ -1,0 +1,57 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA Quadro K2000 (ID=0xffe)
+    Vendor:   NVIDIA
+    VRAM:     1989 MB
+    Driver:   10.18.13.5467
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\DGM-1600\Unity\Brick Breaker\Brick Breaker Complete_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\DGM-1600\Unity\Brick Breaker\Brick Breaker Complete_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\DGM-1600\Unity\Brick Breaker\Brick Breaker Complete_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\DGM-1600\Unity\Brick Breaker\Brick Breaker Complete_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\DGM-1600\Unity\Brick Breaker\Brick Breaker Complete_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\DGM-1600\Unity\Brick Breaker\Brick Breaker Complete_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\DGM-1600\Unity\Brick Breaker\Brick Breaker Complete_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\DGM-1600\Unity\Brick Breaker\Brick Breaker Complete_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\DGM-1600\Unity\Brick Breaker\Brick Breaker Complete_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading D:\DGM-1600\Unity\Brick Breaker\Brick Breaker Complete_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: D:\DGM-1600\Unity\Brick Breaker\Brick Breaker Complete_Data\Managed\System.dll (this message is harmless)
+Platform assembly: D:\DGM-1600\Unity\Brick Breaker\Brick Breaker Complete_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.091 seconds
+WARNING: Shader Unsupported: 'Hidden/Internal-DepthNormalsTexture' - Pass '' has no vertex shader
+WARNING: Shader Unsupported: 'Hidden/Internal-DepthNormalsTexture' - Pass '' has no vertex shader
+WARNING: Shader Unsupported: 'Legacy Shaders/Diffuse' - Pass 'FORWARD' has no vertex shader
+WARNING: Shader Unsupported: 'Legacy Shaders/Diffuse' - Pass 'FORWARD' has no vertex shader
+WARNING: Shader Unsupported: 'Legacy Shaders/Diffuse' - Pass 'PREPASS' has no vertex shader
+WARNING: Shader Unsupported: 'Legacy Shaders/Diffuse' - Pass 'PREPASS' has no vertex shader
+WARNING: Shader Unsupported: 'Legacy Shaders/Diffuse' - Pass 'DEFERRED' has no vertex shader
+WARNING: Shader Unsupported: 'Legacy Shaders/Diffuse' - Pass 'META' has no vertex shader
+WARNING: Shader Unsupported: 'Legacy Shaders/Diffuse' - All passes removed
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.581465 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 10.314138 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 348.
+Total: 0.294912 ms (FindLiveObjects: 0.021299 ms CreateObjectMapping: 0.031539 ms MarkObjects: 0.219955 ms  DeleteObjects: 0.021708 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.442777 ms
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 320.
+Total: 0.353484 ms (FindLiveObjects: 0.017612 ms CreateObjectMapping: 0.020480 ms MarkObjects: 0.212172 ms  DeleteObjects: 0.102809 ms)
+
+Quit Game
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 844 -> priority: 1 
+  Thread -> id: 285c -> priority: 1 
+  Thread -> id: 3be8 -> priority: 1 
+  Thread -> id: 2484 -> priority: 1 

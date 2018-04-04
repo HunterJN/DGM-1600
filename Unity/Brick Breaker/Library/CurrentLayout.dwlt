@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 42
+  controlID: 10
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -305,8 +305,8 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 1
-    m_VSlider: 1
+    m_HSlider: 0
+    m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoom: 0
@@ -318,18 +318,18 @@ MonoBehaviour:
       y: 17
       width: 1056
       height: 423
-    m_Scale: {x: 1.1255087, y: 1.1255087}
-    m_Translation: {x: 499.75314, y: 227.53381}
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 528, y: 211.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -444.02426
-      y: -202.16087
-      width: 938.24243
-      height: 375.83008
+      x: -528
+      y: -211.5
+      width: 1056
+      height: 423
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
@@ -392,9 +392,9 @@ MonoBehaviour:
     height: 926
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d6060000
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 1afcffff00000000
+    m_ExpandedIDs: 407ffcff3680fcff4681fcff5a81fcffc082fcff8883fcff8c83fcffac83fcfffe96fcff10a7fcff58cafcffe0dafcffe800fdffaa12fdfffa16fdffa41bfdff002bfdffce34fdff1a52fdfff263fdffec98fdfffca3fdffda6fffff0876ffff127fffff06aaffff30bfffffc4c1ffff38c4ffff5ec7ffff4ad6ffff1afcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,7 +488,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/_Scenes
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []

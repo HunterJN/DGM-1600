@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5859be48e8881ef4bb12460c971b3f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 2
   newSprite: {fileID: 21300004, guid: 7b6db1fcb1a802545813d7d714abba8c, type: 3}
   newSprite2: {fileID: 21300006, guid: 7b6db1fcb1a802545813d7d714abba8c, type: 3}
 --- !u!212 &212189612898859926
