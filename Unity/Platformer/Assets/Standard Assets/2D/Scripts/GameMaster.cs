@@ -17,11 +17,14 @@ public class GameMaster : MonoBehaviour {
     public Transform playerPrefab;
     public Transform spawnPoint;
     public int spawnDelay = 2;
+    public Transform spawnPrefab;
 
     public IEnumerator RespawnPlayer ()
     {
         yield return new WaitForSeconds (spawnDelay);
         Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
+        Transform clone = Instantiate(spawnPrefab, spawnPoint.position, spawnPoint.rotation);
+        Destroy(clone, 3f);
     }
 
 	public static void KillPlayer (PlayerController player)
@@ -30,4 +33,8 @@ public class GameMaster : MonoBehaviour {
         gm.StartCoroutine(gm.RespawnPlayer());
     }
     
+    public static void KillEnemy (Enemy enemy)
+    {
+        Destroy(enemy.gameObject);
+    }
 }
