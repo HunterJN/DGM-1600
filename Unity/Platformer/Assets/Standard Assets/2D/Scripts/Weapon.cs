@@ -8,6 +8,7 @@ public class Weapon : MonoBehaviour {
     public int Damage = 10;
     public LayerMask whatToHit;
     public Transform BulletTrailPrefab;
+    public Transform HitPrefab;
     float timeToSpawnEffect = 0;
     float timeToFire = 0;
     public float effectSpawnRate = 10;
@@ -63,25 +64,38 @@ public class Weapon : MonoBehaviour {
         if (Time.time >= timeToSpawnEffect)
         {
             Vector3 hitPos;
+            Vector3 hitNormal;
             if (hit.collider == null)
+            {
                 hitPos = (mousePosition - firePointPosition) * 30;
+                hitNormal = new Vector3(9999, 9999, 9999);
+            }
             else
+            {
                 hitPos = hit.point;
-            Effect(hitPos);
+                hitNormal = hit.normal;                
+            }
+
+            Effect(hitPos, hitNormal);
             timeToSpawnEffect = Time.time + 1 / effectSpawnRate;
         }
     }
 
-    void Effect(Vector3 hitPos)
+    void Effect(Vector3 hitPos, Vector3 hitNormal)
     {
         Transform trail = Instantiate(BulletTrailPrefab, firePoint.position, firePoint.rotation);
         LineRenderer lr = trail.GetComponent<LineRenderer>();
         if (lr != null)
         {
-            lr.SetPosition(0, firePoint.position);
-            lr.SetPosition(1, hitPos);
+            lr.SetPosition(1, firePoint.position);
+            lr.SetPosition(0, hitPos);
         }
         Destroy(trail.gameObject, 0.05f);
-        Instantiate(BulletTrailPrefab, firePoint.position, firePoint.rotation);
+        if (hitNormal != new Vector3(9999, 9999, 9999))
+        {
+            Transform hitParticle = Instantiate(HitPrefab, hitPos, Quaternion.FromToRotation(Vector3.right, hitNormal)) as Transform;
+            Destroy(hitParticle.gameObject, 1f);
+        }
+        //Instantiate(BulletTrailPrefab, firePoint.position, firePoint.rotation);
     }
 }
