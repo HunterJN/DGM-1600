@@ -132,13 +132,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Platformer.Plugins.csproj">
-      <Project>{A293E4DB-30B5-C6D1-BB35-84D65DCD2DB3}</Project>
-      <Name>Platformer.Plugins</Name>
-    </ProjectReference>
     <ProjectReference Include="Platformer.csproj">
       <Project>{E84DB2CB-9D22-D13F-CB25-F9E4A39805AC}</Project>
       <Name>Platformer</Name>
+    </ProjectReference>
+    <ProjectReference Include="Platformer.Plugins.csproj">
+      <Project>{A293E4DB-30B5-C6D1-BB35-84D65DCD2DB3}</Project>
+      <Name>Platformer.Plugins</Name>
     </ProjectReference>
     <ProjectReference Include="Platformer.Editor.Plugins.csproj">
       <Project>{D968D6F5-E12C-D13A-D454-4D984F2DFE48}</Project>
@@ -179,6 +179,7 @@
     <None Include="Assets\AstarPathfindingProject\Readme.txt" />
     <None Include="Assets\AstarPathfindingProject\Readme_upgrading.txt" />
     <None Include="Assets\AstarPathfindingProject\link.xml" />
+    <None Include="Assets\ProjectSettings\ProjectVersion.txt" />
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
